@@ -1,0 +1,16 @@
+<section class="items-container">
+  <h2>{{ title }}</h2>
+  <div class="items">
+    <div class="item" *ngFor="let item of items">
+      <img src="../../../assets/images/{{ item.imageName }}" alt="" />
+      <h4>{{ item.name }}</h4>
+      <app-button
+        [btnLabel]="
+          sectionType == 'book' ? 'Reservar item' : 'Cancelar Reserva'
+        "
+        [styleType]="sectionType"
+      >
+      </app-button>
+    </div>
+  </div>
+</section>

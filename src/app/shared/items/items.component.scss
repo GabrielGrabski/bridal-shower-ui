@@ -1,0 +1,21 @@
+h2 {
+    text-align: center;
+}
+
+.items-container {
+    width: 100%;
+}
+
+.items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
